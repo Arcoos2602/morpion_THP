@@ -19,8 +19,3 @@ class Application
     end
   end
 end
-
-
-
-
-# condition de fin @count == 9 et board.check_victory
