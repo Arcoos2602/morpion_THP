@@ -32,6 +32,10 @@ class Board
     temp = [@cases[i1].value, @cases[i2].value, @cases[i3].value] 
   end
 
+  def full?
+    @cases.count {|i| i.value == 'X' || i.value == 'O'}
+  end
+
   def check_victory?(player)
     tmp = (0..2).map {|c| c = player.symbol}
     return true if compare(0, 1, 2).eql?(tmp)

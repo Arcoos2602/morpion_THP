@@ -14,11 +14,8 @@ class Application
     print "> "
     name2 = gets.chomp
     @game = Game.new(name1, name2)
-    count = 0
-    while @game.turn == true && count <= 9
+    while @game.turn == true
       @game.turn
-      count += 1
-      if count == 9 then puts "EGALITE" end
     end
   end
 end

@@ -11,6 +11,10 @@ class Game
   def turn
     board.show_board
     board.play_turn(@current_player)
+    if board.full? == 9
+      puts "EGALTIE"
+      return false
+    end
     if board.check_victory?(@current_player) == true
       game_end
       return false
