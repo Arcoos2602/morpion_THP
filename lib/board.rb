@@ -23,7 +23,7 @@ class Board
       when "C2" ; if cases[7].value == " " then cases[7].value = player.symbol end
       when "C3" ; if cases[8].value == " " then cases[8].value = player.symbol end
       else
-        puts "check"
+        puts "INVALID INPUT"
         play_turn(player)
     end
   end
