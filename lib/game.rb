@@ -12,7 +12,6 @@ class Game
     board.show_board
     board.play_turn(@current_player)
     if board.check_victory?(@current_player) == true
-      puts "incroyable"
       game_end
       return false
     end

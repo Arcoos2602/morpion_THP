@@ -18,6 +18,7 @@ class Application
     while @game.turn == true && count <= 9
       @game.turn
       count += 1
+      if count == 9 then puts "EGALITE" end
     end
   end
 end
